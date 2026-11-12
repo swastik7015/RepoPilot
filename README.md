@@ -86,3 +86,27 @@ See [CONTRIBUTING.md](CONTRIBUTING.md).
 ## License
 
 MIT License. See [LICENSE](LICENSE).
+
+## GitHub Analysis
+
+Analyze any public GitHub repository:
+
+```bash
+python -m repopilot.cli --github owner/repository
+```
+
+Example:
+
+```bash
+python -m repopilot.cli --github swastik7015/RepoPilot
+```
+
+Export live repository information:
+
+```bash
+python -m repopilot.cli --github owner/repository --json github-report.json
+```
+
+GitHub analysis uses the public GitHub REST API and requires no
+authentication for public repositories. Unauthenticated API rate
+limits apply.
