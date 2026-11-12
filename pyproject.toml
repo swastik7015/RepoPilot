@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "repopilot"
+version = "1.0.0"
+description = "A lightweight tool for analyzing GitHub repository health."
+readme = "README.md"
+requires-python = ">=3.10"
+license = {file = "LICENSE"}
+authors = [{name = "Swastik Sharma"}]
+keywords = ["github", "repository", "developer-tools", "python"]
+
+[project.scripts]
+repopilot = "repopilot.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
